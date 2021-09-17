@@ -169,21 +169,24 @@ function consume(a, b, cb) {
 /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
 // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
 
-function add(/*Your Code Here */) {
-  /*Your Code Here*/
+function add(a, b) {
+  return a + b
 }
+// console.log('consume(2, 3, add):', consume(2, 3, add))
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
 
-function multiply(/*Your Code Here */) {
-  /*Your Code Here */
+function multiply(a, b) {
+  return a * b
 }
+// console.log('consume(2, 3, multiply):', consume(2, 3, multiply))
 
 // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
 
-function greeting(/*Your Code Here */) {
-  return /*Your Code Here */
+function greeting(first, last) {
+  return `Hello ${first} ${last}, nice to meet you!`
 }
+// console.log('greeting("Jacob", "Sullivan"):', greeting('Jacob', 'Sullivan'))
 
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
