@@ -126,9 +126,10 @@ function animalNames(animals) {
   For example: ['jackal, asiatic', .....]
   */
 
-function lowerCaseNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lowerCaseNames(animals) {
+  return animals.map((animal) => animal.animal_name.toLowerCase())
 }
+// console.log('lowerCaseNames:', lowerCaseNames(zooAnimals))
 
 /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
