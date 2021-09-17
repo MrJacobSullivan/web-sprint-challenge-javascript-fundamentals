@@ -34,6 +34,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Explain the difference between a callback and a higher order function.
 
+A callback is the function that we pass to another function. A higher order function is the function to which we pass a callback.
+
 3. Explain what a closure is.
 
 4. Describe the four principles of the 'this' keyword.
