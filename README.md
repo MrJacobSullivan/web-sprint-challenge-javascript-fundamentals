@@ -49,6 +49,8 @@ A closure is when a function reaches up out of its scope to access something.
 
 5. Why do we need super() in an extended class?
 
+When we extend an object, we must run the parent object's constructor method. `super()` is used to pass constructor arguments to the parent object.
+
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
