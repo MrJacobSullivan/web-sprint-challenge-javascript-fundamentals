@@ -42,6 +42,11 @@ A closure is when a function reaches up out of its scope to access something.
 
 4. Describe the four principles of the 'this' keyword.
 
+`this` can be bound to the global window object (or be undefined in 'use strict' mode) when in global scope
+`this` can be implicitly bound to whatever is to the left of the period in dot notation
+`this` can be explicitly bound to an object whenever you use the `.call()` or `.apply()` methods
+`this` can be bound to the object we create when we use the `new` keyword
+
 5. Why do we need super() in an extended class?
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
