@@ -38,6 +38,8 @@ A callback is the function that we pass to another function. A higher order func
 
 3. Explain what a closure is.
 
+A closure is when a function reaches up out of its scope to access something.
+
 4. Describe the four principles of the 'this' keyword.
 
 5. Why do we need super() in an extended class?
