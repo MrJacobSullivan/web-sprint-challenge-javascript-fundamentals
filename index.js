@@ -249,6 +249,21 @@ class CuboidMakerTwo {
 const cuboidTwo = new CuboidMaker({ length: 4, width: 5, height: 5 })
 // console.log('cuboidTwo:', cuboidTwo)
 
+class CubeMaker extends CuboidMakerTwo {
+  constructor(attributes) {
+    super({
+      length: attributes.sideLength,
+      width: attributes.sideLength,
+      height: attributes.sideLength,
+    })
+  }
+}
+
+const cube = new CubeMaker({ sideLength: 4 })
+// console.log('cube:', cube)
+// console.log('cube.volume()', cube.volume()) // 64
+// console.log('cube.surfaceArea()', cube.surfaceArea()) // 96
+
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 // console.log(cuboidTwo.volume()); // 100
 // console.log(cuboidTwo.surfaceArea()); // 130
