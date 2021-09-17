@@ -30,7 +30,7 @@ myFunction()
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(number) {
+const summation = (number) => {
   let sum = 0
   for (let i = 1; i <= number; i++) {
     sum += i
@@ -111,7 +111,7 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-function animalNames(animals) {
+const animalNames = (animals) => {
   let displayNames = []
   animals.forEach((animal) => {
     displayNames.push(`name: ${animal.animal_name}, scientific: ${animal.scientific_name}`)
@@ -126,7 +126,7 @@ function animalNames(animals) {
   For example: ['jackal, asiatic', .....]
   */
 
-function lowerCaseNames(animals) {
+const lowerCaseNames = (animals) => {
   return animals.map((animal) => animal.animal_name.toLowerCase())
 }
 // console.log('lowerCaseNames:', lowerCaseNames(zooAnimals))
@@ -136,7 +136,7 @@ function lowerCaseNames(animals) {
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-function lowPopulationAnimals(animals) {
+const lowPopulationAnimals = (animals) => {
   return animals.filter((animal) => animal.population < 5)
 }
 // console.log('lowPopulationAnimals:', lowPopulationAnimals(zooAnimals))
@@ -147,7 +147,7 @@ function lowPopulationAnimals(animals) {
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-function USApop(animals) {
+const USApop = (animals) => {
   return animals.reduce((population, animal) => {
     return population + animal.population
   }, 0)
@@ -162,31 +162,23 @@ function USApop(animals) {
  * The consume function should return the invocation of cb, passing a and b into cb as arguments
  */
 
-function consume(a, b, cb) {
-  return cb(a, b)
-}
+const consume = (a, b, cb) => cb(a, b)
 
 /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
 // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
 
-function add(a, b) {
-  return a + b
-}
+const add = (a, b) => a + b
 // console.log('consume(2, 3, add):', consume(2, 3, add))
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
 
-function multiply(a, b) {
-  return a * b
-}
+const multiply = (a, b) => a * b
 // console.log('consume(2, 3, multiply):', consume(2, 3, multiply))
 
 // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
 
-function greeting(first, last) {
-  return `Hello ${first} ${last}, nice to meet you!`
-}
-// console.log('greeting("Jacob", "Sullivan"):', greeting('Jacob', 'Sullivan'))
+const greeting = (first, last) => `Hello ${first} ${last}, nice to meet you!`
+// console.log('consume("Jacob", "Sullivan", greeting):', consume('Jacob', 'Sullivan', greeting))
 
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
