@@ -17,6 +17,12 @@ myFunction()
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀:
 
+/*
+  The variable `internal` is in scope for the `nestedFunction()` function.
+  The `nestedFunction()` function is able to reach into its parent function and access variables.
+  Reaching up into an upper scope is called a closure.
+*/
+
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
     1. Receive a number 
